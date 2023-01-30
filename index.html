@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Gavin's Portfolio</title>
+        <link rel="icon" href="./favicon.ico" type="image/x-icon">
+        <style>
+            table, th, td {
+            border: 1px solid black;
+        }
+        </style>
+    </head>
+    <script></script>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./coursework.html">Coursework</a></li>
+                    <li><a href="./interests.html">Interests</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Gavin Zhou</h1>
+            <div>
+                <em>Motivated student who seeks to learn more about computer programming and the tech industry.</em>
+            </div>
+            <section>
+                <h2>Education</h2>
+                <strong>University of California, San Diego</strong>
+                <p>Bachelor of Science, Computer Science. <i>Minor in Business.</i></p>
+                <h2>Contact Info</h2>
+                <h3>Phone Number</h3>
+                <p>(510)696-3414</p>
+                <h3>Email</h3>
+                <span>gavinmzhou@gmail.com</span>
+            </section>
+        </main>
+        <hr>
+        <footer>
+            <aside>
+                <p>Socials</p>
+                <img src="instagram_logo.png" alt="Instagram Logo" width="35">
+            </aside>
+            <form>
+                <fieldset>
+                    <legend>Subscribe to Newsletter</legend>
+                    <label for="Email">Email:</label>
+                    <input type="text" id="email" name="Email"><br><br>
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" id="phone" name="phone"><br><br>
+                    <label for="Suggestions">Suggestions to Improve Site:</label><br>
+                    <textarea id="suggestions" name="Suggestions" rows="4" cols="50">Enter suggestions here </textarea><br><br>
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </footer>
+        <h1>Experiments</h1>
+        <table>
+            <caption>Nearest Neighbor</caption>
+            <colgroup>
+                <col span="2">
+                <col>
+            </colgroup>
+            <tr>
+              <th>Type</th>
+              <th>Accuracy Rate</th>
+            </tr>
+            <tr>
+              <td>Eucledian</td>
+              <td>75%</td>
+            </tr>
+            <tr>
+              <td>Normalization</td>
+              <td>85%</td>
+            </tr>
+            <tr>
+                <td>1-Fold</td>
+                <td>80%</td>
+            </tr>
+        </table>
+        <code>Pre demonstration</code>
+        <pre>Button         Demonstration</pre>
+        <button type="button">Button</button>
+        <form>
+            <label for="games">Favorite Game:</label>
+            <select name="games" id="games">
+              <optgroup label="MOBA">
+                <option value="lol">League of Legends</option>
+                <option value="dota">Dota 2</option>
+              </optgroup>
+              <optgroup label="FPS">
+                <option value="valorant">Valorant</option>
+                <option value="cs">CS:GO</option>
+              </optgroup>
+              <input type="submit" value="Submit">
+        </form>
+        <picture>
+            <source media="(min-width:700px)" srcset="valorant1.png">
+            <source media="(min-width:600px)" srcset="valorant2.jpg">
+            <img src="valorant3.jpg" alt="Valorant" style="width:auto;">
+        </picture>
+        <form>
+            <label for="language">Language:</label>
+            <input list="language">
+            <datalist id="language">
+                <option value="English">
+                <option value="Spanish">
+                <option value="Chinese">
+            </datalist>
+        </form>
+        <template>
+            <p>I am hidden</p>
+        </template>
+        <video width="250" controls>
+            <source src="nick.mp4" type="video/mp4">
+        </video>
+        <audio controls>
+            <source src="song.mp3" type="audio/mpeg">
+        </audio>
+        <canvas id="blueCanvas"></canvas>
+        <script>
+            var c = document.getElementById("blueCanvas");
+            var ctx = c.getContext("2d");
+            ctx.fillStyle = "blue";
+            ctx.fillRect(0, 0, 60, 50);
+        </script>
+        <svg width="400" height="100">
+            <polygon points="100,20 300,10 400,100"/>
+        </svg>
+    </body>
+</html>
